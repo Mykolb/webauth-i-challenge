@@ -2,8 +2,11 @@ const router = require('express').Router();
 
 const db = require('./users-model');
 
-//GET
-router.get('/', (req, res) => {
+//import mw
+const protected = require('../middleware/protected');
+
+
+router.get('/', protected, (req, res) => {
     db.find()
     .then(users => {
         res.status(200).json(users)

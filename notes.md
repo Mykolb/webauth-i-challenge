@@ -15,14 +15,14 @@
 ## ORGANIZATION
 [x] server file 
 [x] index file 
-[] routes folder
-    [] routes files
-    [] models
-[] migrations
+[x] routes folder
+    [x] routes files
+    [x] models
+[x] migrations
 [x] knex file
 [] seeds files 
 [x] data folder
-[] dbConfig file 
+[x] dbConfig file 
 
 ##MIGRATIONS (way to recreate your database to particular point in time)
 
