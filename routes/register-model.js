@@ -1,10 +1,11 @@
 const db = require('../migrations/dbConfig');
 
 module.exports = {
-    add 
+    add
 };
 
-const add = users => {
-    db('users')
-    .insert(users, id)
+
+function add(users) {
+    return db('users')
+    .insert(users, 'id')
 }

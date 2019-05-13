@@ -4,7 +4,7 @@
   "description": "web auth i challenge ",
   "main": "index.js",
   "scripts": {
-    "server": "nodemon index.js"
+    "start": "nodemon index.js"
   },
   "repository": "https://github.com/Mykolb/webauth-i-challenge.git",
   "author": "Mykol Benning",

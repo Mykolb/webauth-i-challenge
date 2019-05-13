@@ -5,8 +5,6 @@ module.exports = {
 };
 
 
-const find = () =>  {
- db('users')
+function find() {
+    return db('users')
 }
-
-
