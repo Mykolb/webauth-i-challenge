@@ -1,13 +1,12 @@
 //mw function 
-const bcrypt = require('bcryptjs');
-
 const protected = (req, res, next) => {
-    const { username, password } = req.headers;
+    // const { username, password } = req.headers;
+    //if the client is logged in, req.session.user set 
 
-    if (username && password && bcrypt.compareSync(password, user.password)) {
+    if (req.session && req.session.user) {
         next();
       } else {  
-        res.status(401).json({message: 'You shall not pass!'})
+        res.status(401).json({message: "You didn't think I was going to let you in, did you..?"})
       }
     }
 

@@ -9,11 +9,12 @@ module.exports = {
 
 function find() {
     return db('users')
+    .select('id', 'username');
 }
 
-function findBy(users) {
+function findBy(filter) {
     return db('users')
-    .insert(users, 'id')
+    .where(filter);
 }
 
 function add(users) {
