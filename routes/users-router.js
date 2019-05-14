@@ -1,10 +1,10 @@
 const router = require('express').Router();
-
 const db = require('./users-model');
 
 //import mw
 const protected = require('../middleware/protected');
 
+//WORKING
 
 router.get('/', protected, (req, res) => {
     db.find()

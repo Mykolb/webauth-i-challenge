@@ -11,6 +11,9 @@
     "server": "nodemon index.js", (auto updates server)
     "start": "node index.js"
   },
+[x] install yarn add express-session
+[x] yarn add connect-session-knex
+[x] yarn add cors (to connect to react app)
 
 ## ORGANIZATION
 [x] server file 
